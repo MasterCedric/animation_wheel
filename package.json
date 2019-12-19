@@ -1,0 +1,25 @@
+{
+	"author": "MasterCedric",
+	"version": "1.0",
+	"server_scripts": [
+		"server/animation_wheel.lua"
+	],
+	"client_scripts": [
+		"client/animation_wheel.lua"
+	],
+	"files": [
+		"web/images/crossarms.png",
+		"web/images/dab.png",
+		"web/images/dancing.png",
+		"web/images/laugh.png",
+		"web/images/sit.png",
+		"web/images/smoking.png",
+		"web/images/stop.png",
+		"web/images/vomit.png",
+		"web/scripts/wheelnav/raphael.min.js",
+		"web/scripts/wheelnav/wheelnav.min.js",
+		"web/scripts/index.js",
+		"web/styles/index.css",
+		"web/index.html"
+	]
+}
