@@ -11,7 +11,7 @@ end
 AddEvent("OnPackageStart", OnPackageStart)
 
 function OnKeyPress(key)
-	if key == "F2" then
+	if key == "G" then
 		if(GetWebVisibility(web) == 0) then
 			SetWebVisibility(web, WEB_VISIBLE)
 			ShowMouseCursor(true)
