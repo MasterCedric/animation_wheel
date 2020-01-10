@@ -25,6 +25,22 @@ function OnKeyPress(key)
 end
 AddEvent("OnKeyPress", OnKeyPress)
 
+function OnKeyRelease(key)
+	if key == "O" then
+		if(GetWebVisibility(web) == 0) then
+			SetWebVisibility(web, WEB_VISIBLE)
+			ShowMouseCursor(true)
+			SetInputMode(INPUT_GAMEANDUI)
+		else
+			SetWebVisibility(web, WEB_HIDDEN)
+			ShowMouseCursor(false)
+			SetInputMode(INPUT_GAME)
+		end
+	end
+end
+
+AddEvent("OnKeyRelease", OnKeyRelease)
+
 function OnPlayerAnimation(id)
 	CallRemoteEvent("Server_OnPlayerAnimation", id)
 end
